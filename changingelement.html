@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fp">kya bolti public kasa kai.</p>
+    <button id="fb">kuch badlo</button>
+    <br><br>
+    <p id="sp">kya bolti public kasa kai.</p>
+    <button id="sb">click for red</button>
+    <script>
+        document.getElementById("fb").onclick=function()
+        {
+             document.getElementById("fp").innerHTML="kuch jodne ka hai re"+"&nbsp;&nbsp;"+document.getElementById("fp").innerHTML+"&nbsp;"+"<h1>zyada kuch nahi hoga re</h1>";
+        }
+        document.getElementById("sb").onclick=function()
+        {
+            document.getElementById("sp").style.color="red";
+            document.getElementById("sp").style.textDecoration="underline";
+            document.getElementById("sp").style.fontSize="30px";
+            // saare styles aese hi lagenge 
+        }
+    </script>
+</body>
+</html>
