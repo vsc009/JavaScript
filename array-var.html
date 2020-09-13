@@ -10,6 +10,8 @@
     <input type="text" id="ti">
     <button id="tc">Change the Text</button>
     <p id="t1">Change this</p>
+    <!-- arrya  -->
+    <p id="t2"></p>
     <script>
         var x=5;
         var y=7;
@@ -21,6 +23,17 @@
             te=document.getElementById("ti").value;
             document.getElementById("t1").innerHTML=te;  
         }
+        // array 
+        var cars=["swift","scorpio","fortuner"];
+        // document.getElementById("t2").innerHTML=cars;
+        cars.push("i20 Active");
+        // document.getElementById("t2").innerHTML=cars;
+        cars[4]="Alturas";
+        // document.getElementById("t2").innerHTML=cars;
+        cars.splice(2,1,"endaevour","d720");
+        document.getElementById("t2").innerHTML=cars;
+        // insert ke baad wala first delete hoga 
+        // (insert,delete,to insert)
     </script>    
 </body>
 </html>
