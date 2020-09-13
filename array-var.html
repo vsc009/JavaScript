@@ -7,11 +7,20 @@
 </head>
 <body>
     <p id="text"> This is variable example.</p>
+    <input type="text" id="ti">
+    <button id="tc">Change the Text</button>
+    <p id="t1">Change this</p>
     <script>
         var x=5;
         var y=7;
         var z=x+y;
         document.getElementById("text").innerHTML="x and y is equl to :"+z;
+        document.getElementById("tc").onclick=function()
+        {
+            var te="";
+            te=document.getElementById("ti").value;
+            document.getElementById("t1").innerHTML=te;  
+        }
     </script>    
 </body>
 </html>
