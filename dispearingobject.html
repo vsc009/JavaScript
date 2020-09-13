@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disapearing Objects</title>
+    <style>
+        .circle
+        {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 50px;
+        } 
+        #rc
+        {
+            background-color: red;
+        } 
+        #gc
+        {
+            background-color: green;
+        } 
+        #yc
+        {
+            background-color: yellow;
+        }       
+    </style>
+</head>
+<body>
+    <div class="circle" id="rc" ></div>
+    <div class="circle" id="gc" ></div>
+    <div class="circle" id="yc" ></div>
+    <script>
+        document.getElementById("rc").onclick=function()
+        {
+            document.getElementById("rc").style.display="none";
+        }
+        document.getElementById("gc").onclick=function()
+        {
+            document.getElementById("gc").style.borderRadius="0%";
+        }
+        document.getElementById("yc").onclick=function()
+        {
+            document.getElementById("yc").style.backgroundColor="coral";
+        }
+    </script>
+</body>
+</html>
