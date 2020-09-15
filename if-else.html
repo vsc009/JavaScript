@@ -9,6 +9,10 @@
     <p>What is Codeword ?</p>
     <p><input type="text" id="codeword"></p>
     <p><button id="ccw">Enter</button></p>
+    <!-- number guessing  -->
+    <p>Tell me the which i am thinking.</p>
+    <input type="text" id="number"><br><br>
+    <button id="cn">Guess</button>
     <script>
         document.getElementById("ccw").onclick=function()
         {
@@ -21,6 +25,20 @@
             else
             {
                 alert("nikal");
+            }
+        }
+        document.getElementById("cn").onclick=function()
+        {
+            var rn= Math.random();
+            rn = rn*6;
+            // floor peeche ke decimals hata deta hai 
+            rn= Math.floor(rn);
+            if (document.getElementById("number").value == rn) {
+                alert("mil gaya re baba");
+            }
+            else
+            {
+                alert("galat hai re sahi ye wala hai"+ rn);
             }
         }
     </script>
