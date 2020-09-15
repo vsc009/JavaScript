@@ -7,6 +7,7 @@
 </head>
 <body>
     <div id="table"></div>
+    <p id="t"></p>
     <script>
         var t=0;
         var x="";
@@ -16,6 +17,13 @@
             x= x+"<p>"+t+"</p>";
         }
         document.getElementById("table").innerHTML=x;
+        // tweets 
+        var ts="";
+        var array= ["Hi everyone","Kya hall hai","chalta re bhailog","subhratri","bas bhut ho gaya nikal ab"];
+        for (var i = 0; i < array.length; i++) {
+            ts = ts + array[i];
+        }
+        document.getElementById("t").innerHTML=ts;
     </script>
     
 </body>
