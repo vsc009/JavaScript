@@ -10,12 +10,18 @@
     <p><input type="text" id="codeword"></p>
     <p><button id="ccw">Enter</button></p>
     <script>
-        var x=2;
-        if (x==1) {
-            alert("You are right")
-        }
-        else{
-            alert("You are wrong")
+        document.getElementById("ccw").onclick=function()
+        {
+            var ccw=document.getElementById("codeword").value;
+            var codeword="vishal";
+            if(ccw==codeword)
+            {
+                alert("You are welcome");
+            }
+            else
+            {
+                alert("nikal");
+            }
         }
     </script>
 </body>
